@@ -1,6 +1,17 @@
-<html>
-	<body>
-	
+<html ng-app='app1'>
+	<body ng-controller='controller'>
+
+		<input type="text" placeholder="Type here" ng-model="customWords"/>
+		<br>
+		<br>
+		<br>
+		<div class="showWords">
+			<ul>
+				<li>{{customWords}}</li>
+			</ul>
+
+		</div>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>

@@ -102,12 +102,22 @@ var myData = [
 ];
 
 
+angular.module('arrayApp').service('svc', function() {
 
 
+// the first two share the actual array, and allow the array to be changed
+	this.data = myData;
+
+	// this.getMyData = function() {
+	// 	return myData;
+	//
+	// };
 
 
+// This protects the array so no one can change it:
+	// this.getMyData = function() {
+	// 	return angular.copyTo(myData, []);
+	//
+	// };
 
-
-
-
-
+});

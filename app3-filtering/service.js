@@ -100,3 +100,13 @@ var myData = [
 	{"name": "Amber Ball", "email": "Quisque@Aenean.ca", "dateEmployed": "08/11/2015", "phone": "651-3983"},
 	{"name": "Odysseus Nash", "email": "purus@rutrum.co.uk", "dateEmployed": "01/08/2016", "phone": "722-7908"}
 ];
+
+angular.module('app3').service('mainService', function(){
+
+
+// test that service is connected
+	// this.svcTest = "service is working";
+
+	this.data = myData;
+
+});
