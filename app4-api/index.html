@@ -1,10 +1,11 @@
 <html ng-app="apiApp">
 	<body ng-controller= 'mainCtrl'>
 
-		<!-- {{test}} -- -- {{svctest}}  testing svc and controller in view -->
-
+		<!--  -- -- {{svctest}}  testing svc and controller in view -->
+		Index words
+		{{test}}
 		<!-- {{retrieveStarships}} -->
-		<div ng-repeat="starship in starships">
+		<div ng-repeat="starship in starships.results">
 			<ul>
 				<li>{{starship.name}}</li>
 			</ul>

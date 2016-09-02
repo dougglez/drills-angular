@@ -1,7 +1,7 @@
 angular.module('apiApp').controller('mainCtrl', function($scope, mainService){
 
 // tests to make sure controller is connected to view and svc
- // $scope.test = 'Ctrl connected';
+ $scope.test = 'Ctrl connected';
  // $scope.svctest = mainService.svctest;
 
 
