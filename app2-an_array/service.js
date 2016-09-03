@@ -103,11 +103,6 @@ var myData = [
 
 
 
-
-
-
-
-
-
-
-
+angular.module('arrayApp').service('mainService', function(){
+	this.data = myData;
+});

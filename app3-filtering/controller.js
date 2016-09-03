@@ -1,0 +1,6 @@
+angular.module('app3').controller('mainCtrl', function($scope, mainService) {
+  // $scope.test = 'ctrl is connected';
+
+  $scope.people = mainService.data;
+
+});

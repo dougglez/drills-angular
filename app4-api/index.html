@@ -1,7 +1,19 @@
 <html ng-app="apiApp">
-	<body>
-		
-				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+	<body ng-controller='mainCtrl'>
+		Filter by State:
+		<input type="text"/>
+		Filter by Poplation:
+		<input type="text"/>
+		<div class="stateList" ng-repeat="state in statePop">
+			<ul>
+				<li>State: {{state[0]}}</li>
+				<li>Pop: {{state[1]}}</li>
+			</ul>
+
+		</div>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
 		<script src="service.js"></script>
